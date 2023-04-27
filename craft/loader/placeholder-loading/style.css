@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black-1: #212529;
+  --black-2: #343a40;
+  --black-3: #495057;
+  --black-4: #6c757d;
+
+  --gray-1: #adb5bd;
+
+  --white-1: #f8f9fa;
+  --white-2: #e9ecef;
+  --white-3: #dee2e6;
+  --white-4: #ced4da;
+
+  --bg-black-1: hsl(0, 0%, 9%);
+  --bg-black-2: hsla(0, 0%, 9%, 0.8);
+  --bg-black-3: hsla(0, 0%, 0%, 0.2);
+
+  --bg-gray-1: #ffffff21;
+  --bg-gray-2: #ffffff1a;
+  --bg-gray-3: #3e3e3e;
+
+  --bg-gray-4: #7e7e7e;
+
+  --txt-white-1: #ffffff;
+  --txt-white-2: #ededed;
+  --txt-white-3: #a0a0a0;
+  --txt-white-4: #7e7e7e;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-black-1);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+/* ======================== */
+.card {
+  width: 350px;
+  height: 300px;
+  background-color: var(--bg-gray-1);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card__input {
+  background-image: linear-gradient(
+    90deg,
+    var(--bg-black-2) 10px,
+    var(--bg-gray-3) 40px,
+    var(--bg-black-2) 40px
+  );
+  background-size: 300%;
+  background-position: 50% 0;
+  border-radius: inherit;
+
+  padding: 1em;
+  outline: none;
+  resize: none;
+  color: var(--white-4);
+
+  animation: shimmer 4s infinite;
+}
+
+.card__input__title,
+.card__input__desc {
+  width: 100%;
+  border: none;
+}
+
+.card__input__title {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+.card__input__desc {
+  height: 230px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -100% 0;
+  }
+}
