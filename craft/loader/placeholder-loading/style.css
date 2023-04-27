@@ -31,6 +31,8 @@
   --txt-white-2: #ededed;
   --txt-white-3: #a0a0a0;
   --txt-white-4: #7e7e7e;
+
+  --border: #ffffff14;
 }
 
 html,
@@ -47,9 +49,10 @@ body {
 }
 /* ======================== */
 .card {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 300px;
-  background-color: var(--bg-gray-1);
+  background-color: var(--border);
   padding: 10px;
   border-radius: 8px;
 }
@@ -57,9 +60,9 @@ body {
 .card__input {
   background-image: linear-gradient(
     90deg,
-    var(--bg-black-2) 10px,
-    var(--bg-gray-3) 40px,
-    var(--bg-black-2) 40px
+    var(--bg-black-1) 25px,
+    var(--bg-black-2) 30px,
+    var(--bg-black-1) 50px
   );
   background-size: 300%;
   background-position: 50% 0;
@@ -70,7 +73,7 @@ body {
   resize: none;
   color: var(--white-4);
 
-  animation: shimmer 4s infinite;
+  animation: shimmer 3s infinite;
 }
 
 .card__input__title,
