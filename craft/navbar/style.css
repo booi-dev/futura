@@ -34,8 +34,13 @@ body {
   color: var(--txt-white-1);
 }
 
+body nav {
+  padding-block: 1em;
+}
+
 body ul {
   display: flex;
+  justify-content: center;
   gap: 2em;
   list-style: none;
   font-family: var(--fnt-fam);
@@ -44,6 +49,7 @@ body ul {
 .navs {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding-block: 2em;
 }
 
@@ -57,3 +63,5 @@ body ul {
 .nav-one ul:hover li:hover {
   color: var(--acc-clr);
 }
+
+/* nav-two */

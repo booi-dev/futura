@@ -1,0 +1,22 @@
+.swiper-container {
+  padding-inline: 1em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swiper-card {
+  background: green;
+  height: 200px;
+}
+
+.swiper-pagination {
+  padding: 1em;
+  background-color: yellow;
+}
+
+.swiper-pagination-bullet {
+  background-color: red;
+}
