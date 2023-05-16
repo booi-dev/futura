@@ -1,3 +1,5 @@
+import { useRef } from "react";
+
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,9 +29,12 @@ function Swipe() {
     },
   };
 
+  const swiperRef = useRef(null);
+
   return (
     <div className="swiper-container">
       <Swiper
+        ref={swiperRef}
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={5}
@@ -48,7 +53,6 @@ function Swipe() {
           <div className="swiper-card">Slide 1</div>
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <div className="swiper-card">Slide 1</div>{" "}
         </SwiperSlide>
         <SwiperSlide>
